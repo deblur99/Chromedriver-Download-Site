@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chromedriver Downloads</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>Chromedriver Downloads</header>
+    <span id="introduce">
+      Are you looking for latest / old Chromedriver binaries?
+      <br />
+      You can find them!
+    </span>
+
+    <div id="big-sort-container">
+      <button type="button" class="big-sort-btn">
+        Search by <strong>Versions</strong>
+      </button>
+      <button type="button" class="big-sort-btn">
+        Search by <strong>OS & Arch</strong>
+      </button>
+    </div>
+
+    <article>
+      <!-- 윈도우, 맥, 리눅스 -->
+      <!-- arm, arm64, x86, x86_64 -->
+
+      <!-- 이걸 쓰는 사람들의 목적? -->
+      <!-- 1) 같은 버전 내 서로 다른 OS들을 한번에 다운 -->
+      <!-- 2) 같은 OS 내 필요한 특정 버전을 다운 -->
+
+      <!-- 사이트 및 서버의 부담 완화를 위한 캐싱? -->
+      <!-- -> 사용자 브라우저의 Local storage를 활용하는 건? -->
+
+      <!-- 일단 나는 2번을 먼저 접근해보자 -->
+      <!-- 1) 버전 선택지를 어떻게 제시할 것인가? -->
+      <!--  - 버전 목록은 997개인데 이걸 하나의 콤보박스에 넣는 건 말이 안 됨 -->
+      <!--  - 따라서, 앞자리만 콤보박스에 넣고 그 뒤에 있는 버전들만 표시하자 -->
+      <!-- 2) 버전별 선택 페이지와 OS & 아키텍처별 선택 페이지 두 가지로 나누기 -->
+      <!-- 3) 그렇게 필터링된 버전만 표시하여 다운로드되게끔 하기 -->
+
+      <div id="majorVersionSelectContainer">
+        <label for="majorVersionSelect">Major version of Chrome</label>
+        <select
+          aria-label="majorVersion"
+          name="majorVersion"
+          id="majorVersionSelect"
+        >
+          <option value="ㅇㅇㅇㅇ">ㅇㅇㅇㅇ</option>
+        </select>
+      </div>
+
+      <div id="table-container">
+        <table>
+          <tr>
+            <th>Index</th>
+            <th>Version</th>
+            <th>Revision</th>
+            <th>Platform</th>
+            <th>Download</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>113.0.5672.0</td>
+            <td>1121455</td>
+            <td>mac-x64</td>
+            <td><button type="button">Download</button></td>
+          </tr>
+        </table>
+      </div>
+    </article>
+    <footer>
+      <span>Made by Deblur</span>
+      <span>|</span>
+      <a href="https://github.com/deblur99">Github</a>
+      <a href="https://developer.chrome.com/docs/chromedriver/downloads"
+        >Chromedriver Official</a
+      >
+    </footer>
+  </body>
+</html>
